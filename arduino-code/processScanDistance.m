@@ -47,14 +47,14 @@ function processScanDistance(inputFile, outputStlFile)
     [Xs, Ys, Zs] = smoothMesh(X, Y, Z, smoothSpan);
 
     % ---- 5. Plot the result ------------------------------------------------
-    figure('Name', 'Scanned mesh');
-    surf(Xs, Ys, Zs, 'EdgeColor', 'none');
-    axis equal;
-    xlabel('X (mm)'); ylabel('Y (mm)'); zlabel('Z (mm)');
-    title('Reconstructed 3D scan');
-    camlight; lighting gouraud;
-    colormap(gray);
-    view(45, 25);
+    %figure('Name', 'Scanned mesh');
+    %surf(Xs, Ys, Zs, 'EdgeColor', 'none');
+    %axis equal;
+    %xlabel('X (mm)'); ylabel('Y (mm)'); zlabel('Z (mm)');
+    %title('Reconstructed 3D scan');
+    %camlight; lighting gouraud;
+    %colormap(gray);
+    %view(45, 25);
 
     % ---- 6. Export STL --------------------------------------------------
     surf2stl(outputStlFile, Xs, Ys, Zs, 'binary');
