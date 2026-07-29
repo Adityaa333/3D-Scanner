@@ -1,5 +1,8 @@
 # DIY 3D Scanner
 
+![C](https://img.shields.io/badge/C-Language-blue)
+![MATLAB](https://img.shields.io/badge/MATLAB-Processing-green)
+
 A low-cost rotary 3D scanner built on an Arduino Nano, two NEMA-17 steppers, and a Sharp-style analog IR distance sensor. Raw scan data is logged to an SD card, then post-processed in MATLAB/Octave into a printable STL mesh.
 
 ## How it works
