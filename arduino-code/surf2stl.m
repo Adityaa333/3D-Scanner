@@ -1,4 +1,5 @@
 function surf2stl(filename, x, y, z, mode)
+
 %SURF2STL  Write a surface (as X, Y, Z grid data) to an STL file.
 %
 %   surf2stl(FILENAME, X, Y, Z) writes a binary STL file.
